@@ -17,17 +17,24 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    margin-top: 5em;
-    width: 400px;
+    width: 100%;
+    height: 100vh;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     width: 400px;
     height: 250px;
     text-align: left;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.card_blue .front {
+    background-image: linear-gradient(rgb(102, 160, 255), rgb(68, 139, 255));
 }
 
 .flip {
@@ -49,26 +56,22 @@ body {
     transform: translateZ(0);
 }
 
-.strip {
+.backtext {
     position: absolute;
-    right: 0;
+    right: -43px;
     height: inherit;
-    background-image: linear-gradient(to bottom, #ff6767, #ff4545);
-    box-shadow: 0 0 10px 0px rgba(0, 0, 0, .5);
-}
-.strip_bottom {
-    width: 200px;
-    transform: skewX(-15deg) translateX(50px);
-}
-.strip_top {
-    width: 180px;
-    transform: skewX(20deg) translateX(50px);
+    font-size: 360px;
+    top: -111px;
+    opacity: 0.1;
+    font-weight: 400;
 }
 
-.logo {
+.logox {
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 25px;
+    font-weight: 900;
+    font-size: 35px;
 }
 
 .investor {
